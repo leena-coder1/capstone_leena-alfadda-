@@ -1,31 +1,29 @@
-data was not uploded because it was large
-
 1. Introduction
 In this project, I worked on a machine learning and deep learning pipeline for image classification. The main goal was to build and compare different models in order to understand how traditional machine learning methods perform compared to deep learning approaches such as Convolutional Neural Networks (CNN).
 This project helped me understand the full workflow of a machine learning system, starting from data loading and preprocessing to model training, evaluation, and final comparison.
+
 2. Dataset Description
 The dataset consists of two classes of images representing real vs AI-generated images. Each image was resized to 16×16 pixels with 3 color channels to reduce computational complexity and speed up processing.
 The dataset was split into training (80%) and testing (20%) using a stratified split to ensure balanced class distribution. Additionally, pixel values were normalized to the range [0, 1] to improve model stability and performance during training.
+NOTE: Data was not uploded because it was large.
+
 3. Models Used
-Three classical machine learning models were trained and evaluated:
-           Model                          Accuracy    Precision      Recall         F1-score
-Logistic Regression      0.609375    0.634783     0.688679    0.660633
-Random Forest             0.619792    0.663366     0.632075    0.647343
-KNN                                0.604167    0.641509     0.641509    0.641509
+Three classical machine learning models were trained and evaluated (lo
 Among these models, Random Forest achieved the highest Accuracy (0.6198), making it the best-performing traditional model overall in terms of correct predictions.
 However, Logistic Regression achieved the highest Recall and F1-score, indicating it was better at identifying positive samples and maintaining a balanced performance between precision and recall.
 
 4. Neural Network (CNN)
 A Convolutional Neural Network (CNN) was built and trained to improve performance on image classification. The CNN consisted of convolutional layers for feature extraction, followed by pooling layers and fully connected layers with dropout to reduce overfitting.
 The CNN achieved an F1-score of approximately 0.67, the improvement is moderate due to the small image size (16×16).
+
 5. Results & Comparison
 All models were evaluated using Accuracy, Precision, Recall, and F1-score.
 The results show that:
 Logistic Regression performed best in Recall and F1-score
 CNN performed best overall (highest F1-score and strongest generalization)
 The results confirm that CNN is more suitable for image classification tasks because it can automatically learn spatial features without manual feature engineering.
+
 6. What I Learned
 Through this project, I learned how to build a complete machine learning pipeline including data preprocessing, model training, and evaluation.
 I also learned that more complex models do not always guarantee better performance, especially when the dataset is small or limited in detail. Proper preprocessing and understanding the data are just as important as choosing the model itself.
 Additionally, I gained experience in comparing multiple models and interpreting evaluation metrics such as F1-score, which is very important when dealing with imbalanced or real-world datasets.
-
